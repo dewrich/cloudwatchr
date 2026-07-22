@@ -1,0 +1,7 @@
+# CloudWatchr/mkdocs.yml
+# Standalone repo — peer of CloudLedger, no shared platform-docs aggregator in this POC.
+# MkDocs is retired anyway: GitHub renders the shipped docs (Markdown) natively. This file is
+# vestigial, kept only so tooling that still expects it does not trip — mirrors CloudLedger.
+
+site_name: CloudWatchr
+site_url: https://example.com/cloudwatchr/
