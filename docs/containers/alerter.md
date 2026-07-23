@@ -11,7 +11,6 @@ relations:
     kind: reads
     desc: Pulls spend rollups and daily cost rows to evaluate against budget rules (cross-repo)
     tech: HTTPS / REST — GET /costs/rollups/by-service, /costs/daily (costs:view)
-    repo: https://github.com/dewrich/cloudledger
   - to: ext/aws-cognito
     kind: uses
     desc: Obtains a bearer token with costs:view so CloudLedger's API accepts the call
@@ -67,7 +66,7 @@ exactly as CloudLedger's own docs require — see its
 <!-- archdocs:begin -->
 ## Relations
 
-- **reads** → [ext/cloudledger-costs-api](../externals/cloudledger-costs-api.md) — Pulls spend rollups and daily cost rows to evaluate against budget rules · cross-repo → https://github.com/dewrich/cloudledger
+- **reads** → [ext/cloudledger-costs-api](../externals/cloudledger-costs-api.md) — Pulls spend rollups and daily cost rows to evaluate against budget rules (cross-repo)
 - **uses** → [ext/aws-cognito](../externals/aws-cognito.md) — Obtains a bearer token with costs:view so CloudLedger's API accepts the call
 - **writes** → [cloudwatchr/alert-state-db](../contracts/alert-state-db.md) — Reads active rules; writes fired/cleared alert state (idempotent per rule × window)
 <!-- archdocs:end -->

@@ -10,7 +10,6 @@ relations:
     kind: reads
     desc: Reads aggregated AWS spend from CloudLedger's Costs domain API to evaluate budget rules
     tech: HTTPS / REST (costs:view) — cross-repo, see externals/cloudledger-costs-api.md
-    repo: https://github.com/dewrich/cloudledger
 ---
 
 # CloudWatchr — system (C4 L1 Context)
@@ -58,5 +57,5 @@ for that side of the boundary.
 <!-- archdocs:begin -->
 ## Relations
 
-- **reads** → [cloudledger (CloudLedger Costs API)](../externals/cloudledger-costs-api.md) — Reads aggregated AWS spend from CloudLedger's Costs domain API to evaluate budget rules · cross-repo → https://github.com/dewrich/cloudledger
+- **reads** → `cloudledger` — Reads aggregated AWS spend from CloudLedger's Costs domain API to evaluate budget rules
 <!-- archdocs:end -->

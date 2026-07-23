@@ -1,7 +1,6 @@
 ---
 id: ext/cloudledger-costs-api
 kind: external
-subkind: peer-system
 system: cloudwatchr
 name: CloudLedger Costs API
 tech: CloudLedger Inventory API — Costs domain (Go/Fiber, OpenAPI-first)
